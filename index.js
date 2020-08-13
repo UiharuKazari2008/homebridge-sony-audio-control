@@ -11,7 +11,7 @@ module.exports = function(homebridge) {
 };
 
 function SonyAudioControlReceiver(log, config) {
-  var baseHttpUrl = "http://" + config.ip + ":10000";
+  var baseHttpUrl = "http://" + config.ip;
   var outputZone = (config.outputZone === undefined) ? "" : config.outputZone;
 
   this.log = log;
@@ -28,7 +28,7 @@ function SonyAudioControlReceiver(log, config) {
       "value": "2chStereo"
     }
   ];
-  this.baseWsUrl = "ws://" + config.ip + ":10000";
+  this.baseWsUrl = "ws://" + config.ip;
   this.networkStandby.url = baseHttpUrl + "/sony/system";
   this.networkStandby.enableNetworkStandby = config.enableNetworkStandby === false ? false : true;
   this.audioWsUrl = this.baseWsUrl + "/sony/audio";

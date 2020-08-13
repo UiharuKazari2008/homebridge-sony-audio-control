@@ -1,8 +1,8 @@
 {
   "name": "homebridge-sony-audio-control",
-  "version": "2.3.0",
+  "version": "2.3.0.1",
   "license": "ISC",
-  "description": "Homebridge plugin to control a Sony STR-DN1080 AV-receiver",
+  "description": "Homebridge plugin to control a Sony STR-DN1080 AV-receiver (Modified by Kazari)",
   "keywords": [
     "homebridge-plugin"
   ],
@@ -11,11 +11,11 @@
     "homebridge": ">=0.2.0"
   },
   "author": {
-    "name": "Andi and Tor André Roland"
+    "name": "Andi and Tor André Roland and Yukimi Kazari"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:torandreroland/homebridge-sony-audio-control.git"
+    "url": "https://code.acr.moe/kazari/homebridge-sony-audio-control"
   },
   "dependencies": {
     "np": "^5.2.1",
