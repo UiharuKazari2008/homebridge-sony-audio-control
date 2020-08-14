@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-sony-audio-control",
+  "name": "homebridge-sony-audio-control-kazari",
   "version": "2.3.1",
   "license": "ISC",
   "description": "Homebridge plugin to control a Sony STR-DN1080 AV-receiver (Modified by Kazari)",
