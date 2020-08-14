@@ -147,35 +147,33 @@ function SonyAudioControlReceiver(log, config) {
   this.power = {
     get statusBody() {
       return JSON.stringify({
-        "method": "getCurrentExternalTerminalsStatus",
+        "method": "getPowerStatus",
         "id": 127,
         "params": [],
-        "version": "1.0"
+        "version": "1.1"
       })
     },
     get onBody() {
       return JSON.stringify({
-        "method": "setActiveTerminal",
+        "method": "setPowerStatus",
         "id": 127,
         "params": [{
-          "active": "active",
-          "uri": outputZone
+          "status": "active",
         }],
-        "version": "1.0"
+        "version": "1.1"
       })
     },
     get offBody() {
       return JSON.stringify({
-        "method": "setActiveTerminal",
+        "method": "setPowerStatus",
         "id": 127,
         "params": [{
-          "active": "inactive",
-          "uri": outputZone
+          "status": "standby",
         }],
-        "version": "1.0"
+        "version": "1.1"
       })
     },
-    url: baseHttpUrl + "/sony/avContent"
+    url: baseHttpUrl + "/sony/system"
   };
 
   this.setNetWorkStandby();
