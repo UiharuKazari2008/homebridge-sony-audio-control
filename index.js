@@ -158,7 +158,7 @@ function SonyAudioControlReceiver(log, config) {
         "method": "setPowerStatus",
         "id": 127,
         "params": [{
-          "status": "active",
+          "status": "active"
         }],
         "version": "1.1"
       })
@@ -168,7 +168,7 @@ function SonyAudioControlReceiver(log, config) {
         "method": "setPowerStatus",
         "id": 127,
         "params": [{
-          "status": "standby",
+          "status": "off"
         }],
         "version": "1.1"
       })
