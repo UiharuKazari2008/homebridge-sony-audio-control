@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-sony-audio-control-kazari",
+  "name": "homebridge-sony-audio-control-heargo-kazari",
   "version": "2.3.3-0",
   "license": "ISC",
   "description": "Homebridge plugin to control a Sony STR-DN1080 AV-receiver (Modified by Kazari)",
