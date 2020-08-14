@@ -426,7 +426,7 @@ SonyAudioControlReceiver.prototype = {
         body = body.replace("]]", "]");
         let responseBody = JSON.parse(body);
         let responseBodyResult = responseBody.result[0];
-        let currentPowerState = responseBodyResult.active == "active";
+        let currentPowerState = responseBodyResult.status == "active";
         this.log.debug("Speaker is currently %s", currentPowerState ? "on" : "off");
         callback(null, currentPowerState);
       }
